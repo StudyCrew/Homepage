@@ -1,6 +1,7 @@
 import React from "react";
 import "./Project.css";
-import project_image from "./../../assets/project-image.jpg";
+import project_image from "../../assets/project-image.jpg";
+import Image from 'next/image';
 
 /**
  * Project Component
@@ -36,7 +37,7 @@ const Project = () => {
 
       {/* Right column containing project image and subtitle */}
       <div className="project-right-column">
-        <img
+        <Image
           src={project_image}
           className="project-image"
           alt="Project representation"

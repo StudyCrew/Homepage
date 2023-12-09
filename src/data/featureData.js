@@ -16,6 +16,7 @@ import learning_environments from "./../assets/features/learning_environments.sv
 import collaborative_projects from "./../assets/features/collaborative_projects.svg";
 import virtual_study_rooms from "./../assets/features/virtual_study_rooms.svg";
 import virtual_events from "./../assets/features/virtual_events.svg";
+import profile from "./../assets/features/profile.svg";
 
 const stages = [
   {
@@ -54,7 +55,7 @@ const stages = [
           "Your hub for insights and access. Dive into tailored overviews, navigate to desired resources, and gain clarity on your learning journey. All your educational tools, in one cohesive space.",
       },
       {
-        image: personal_dashboard,
+        image: profile,
         title: "User Profile",
         description:
           "Your hub for insights and access. Dive into tailored overviews, navigate to desired resources, and gain clarity on your learning journey. All your educational tools, in one cohesive space.",

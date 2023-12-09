@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Team.css";
 import Button from "../Button/Button";
 import teamMembers from '../../data/teamData';
+import Image from 'next/image';
 
 const Team = () => {
   const scrollContainer = useRef(null);
@@ -10,7 +11,7 @@ const Team = () => {
   const scrollHorizontally = () => {
     if (scrollContainer.current) {
       const step = () => {
-        scrollContainer.current.scrollLeft += 1; 
+        scrollContainer.current.såcrollLeft += 1; 
         if (scrollContainer.current.scrollLeft >= scrollContainer.current.scrollWidth / 2) {
           scrollContainer.current.scrollLeft = 0;
         }

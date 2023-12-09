@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'; // Removed useCallback
 import "./Features.css";
 import stages from '../../data/featureData';
+import Image from 'next/image';
 
 function Features() {
   const owlCarousel = useRef();
@@ -69,7 +70,7 @@ function Features() {
                 <div className="cards" style={{ transform: `translateX(${cardWidth}px` }} ref={cardsContainer}>
                   {stage.cards.map(card => (
                     <div key={card.title} className="card">
-                      <img className="card-image" src={card.image} alt={card.title} />
+                      <Image className="card-image" src={card.image} alt={card.title} />
                       <h3 className="card-title">{card.title}</h3>
                       <p className="card-description">{card.description}</p>
                     </div>

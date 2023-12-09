@@ -1,5 +1,5 @@
-import { siteMetaData } from "@/config/site";
-import "@/styles/globals.css";
+import { siteMetaData } from "../config/site";
+import "../styles/globals.css";
 
 // import { Inter } from "next/font/google";
 
