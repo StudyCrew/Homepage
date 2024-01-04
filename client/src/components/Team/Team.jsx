@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./Team.css";
 import Button from "../Button/Button";
-import teamMembers from '../../data/teamData';
-import Image from 'next/image';
+import teamMembers from "../../data/teamData";
+import Image from "next/image";
 
 const Team = () => {
   const scrollContainer = useRef(null);
@@ -11,8 +11,11 @@ const Team = () => {
   const scrollHorizontally = () => {
     if (scrollContainer.current) {
       const step = () => {
-        scrollContainer.current.såcrollLeft += 1; 
-        if (scrollContainer.current.scrollLeft >= scrollContainer.current.scrollWidth / 2) {
+        scrollContainer.current.såcrollLeft += 1;
+        if (
+          scrollContainer.current.scrollLeft >=
+          scrollContainer.current.scrollWidth / 2
+        ) {
           scrollContainer.current.scrollLeft = 0;
         }
         requestAnimationFrame(step);
@@ -32,14 +35,14 @@ const Team = () => {
   return (
     <div className="team-component">
       <div className="head-title">
-				<h2 className="heading">
-					Our <span className="heading">Team</span>
-				</h2>
-				<p>
-					Our team of talented and open-minded individuals makes Study Crew one of the most diverse sets of
-					collaborators in the world.
-				</p>
-			</div>
+        <h2 className="heading">
+          Our <span className="heading">Team</span>
+        </h2>
+        <p className="team-des">
+          Our team of talented and open-minded individuals makes Study Crew one
+          of the most diverse sets of collaborators in the world.
+        </p>
+      </div>
       <div className="bg">
         <div className="team-cards" ref={scrollContainer}>
           {allMembers.map((member, index) => (
